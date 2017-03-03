@@ -15,9 +15,9 @@
     <host_information><%= @ossec_global_host_information_level %></host_information>
     <% @ossec_white_list.each do |ipaddress| -%><white_list><%= ipaddress %></white_list>
     <% end %>
-    <% unless @ossec_custom_alert_output.empty? -%>
+    <%- unless @ossec_custom_alert_output.empty? -%>
     <custom_alert_output><%= @ossec_custom_alert_output %></custom_alert_output>
-    <% end -%>
+    <%- end -%>
   </global>
 
 <% if @syslog_output == true then -%>
