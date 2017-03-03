@@ -134,6 +134,12 @@
     <connection>secure</connection>
     <port><%= @ossec_server_port %></port>
   </remote>
+<% if @ossec_syslog_server == true then -%>
+  <remote>
+    <connection>syslog</connection>
+    <port><%= @ossec_syslog_server_port %></port>
+  </remote>
+<% end -%>
 
   <alerts>
     <log_alert_level>1</log_alert_level>

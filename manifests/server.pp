@@ -22,6 +22,8 @@ class ossec::server (
   $ossec_prefilter                     = false,
   $ossec_service_provider              = $::ossec::params::ossec_service_provider,
   $ossec_server_port                   = '1514',
+  $ossec_syslog_server                 = false,
+  $ossec_syslog_server_port            = '514',
   $use_mysql                           = false,
   $mariadb                             = false,
   $mysql_hostname                      = undef,
