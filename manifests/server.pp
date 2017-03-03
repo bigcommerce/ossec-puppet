@@ -24,6 +24,7 @@ class ossec::server (
   $ossec_server_port                   = '1514',
   $ossec_syslog_server                 = false,
   $ossec_syslog_server_port            = '514',
+  $ossec_custom_alert_output           = '',
   $use_mysql                           = false,
   $mariadb                             = false,
   $mysql_hostname                      = undef,
