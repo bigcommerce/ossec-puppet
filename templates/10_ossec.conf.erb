@@ -144,6 +144,9 @@
   <remote>
     <connection>syslog</connection>
     <port><%= @ossec_syslog_server_port %></port>
+<% @ossec_syslog_allowed_ips.each do |ip| -%>
+    <allowed-ips><%= @ip %></allowed-ips>
+<% end -%>
   </remote>
 <% end -%>
 
